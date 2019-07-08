@@ -1,0 +1,171 @@
+---
+name: R. Dimas Bagas Herlambang
+position: Corporate Consultant
+address: Algoritma Data Science School
+phone: +62 878-5231-3159
+www: bagasbgy.com
+email: bagasbgy@gmail.com
+twitter: bagasbgy
+github: bagasbgy
+linkedin: dimasbagash
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::moderncv:
+    theme: casual
+---
+
+```{r setup, include=FALSE}
+# chunk set-up
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+
+# import libs
+library(tidyverse)
+library(vitae)
+```
+
+# About Me
+
+Experienced Data Scientist with a demonstrated history of working in the higher education industry. Skilled in Policy Analysis, Econometrics, Machine Learning, and Deep Learning. Strong research professional with a Bachelor's degree focused in Economics from Universitas Airlangga. Currently working as a Corporate Consultant at Algoritma Data Science Education Center, and handled various business problems through data sciences; from simple data preprocess to how to handle big data, and from general machine learning problems to more complex deep learning tasks.
+
+# Educations
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "Bachelor's Degree in Economics", "2014 - 2018", "Universitas Airlangga", "Jln. Airlangga 4-6, Surabaya, Indonesia", "GPA of 3.74"
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Experiences
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "Corporate Consultant", "Nov 2018 - Aug 2019", "Algoritma Data Science School", "Menara Kadin Indonesia, Jln. H.R. Rasuna Said, Jakarta Selatan, Indonesia", NA,
+  "Teaching Assistant", "Jul 2018 - Nov 2018", "Algoritma Data Science School", "Menara Kadin Indonesia, Jln. H.R. Rasuna Said, Jakarta Selatan, Indonesia", NA,
+  "Research Assistant", "Feb 2018 - Jul 2018", "Department of Economics, Universitas Airlangga", "Jln. Airlangga 4-6, Surabaya, Indonesia", NA,
+  "Senior Researcher", "Jul 2017 - Dec 2017", "Pusat Data Analisis Keuangan Indonesia, Universitas Airlangga", "Jln. Airlangga 4-6, Surabaya, Indonesia", NA,
+  "Manager of Research Division", "Oct 2016 - Jul 2017", "Pusat Data Analisis Keuangan Indonesia, Universitas Airlangga", "Jln. Airlangga 4-6, Surabaya, Indonesia", NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+\newpage
+
+# Past Organizations
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "Vice President", "Dec 2016 - Dec 2017", "Badan Eksekutif Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Airlangga (Student Executive Board)", NA, NA,
+  "Chairman", "Dec 2015 - Dec 2016", "Himpunan Mahasiswa Ekonomi Pembangunan Universitas Airlangga (Student Association)", NA, NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Honors and Awards
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "1st Place Winner for Student Category in 4th EJAVEC", "Oct 2017", "Bank Indonesia & Universitas Airlangga", NA, NA,
+  "Awardee of Generasi Baru Indonesia Scholarship", "Mar 2016", "Bank Indonesia", NA, NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Publications - Papers
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "Optimizing Demographic Dividend in Perspective of Return on Education in East Java: To School, to Work, or to Entrepreneur?", "Oct 2018", "EJAVEC Journal", NA, NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Publications - Softwares (R Packages and Projects)
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "rucoin: An R API to KuCoin market", "Jun 2019", "https://github.com/bagasbgy/rucoin", NA, NA,
+  "tidymodels-examples: A personal collection of tidymodels implementation for various machine learning routines", "May 2019", "https://github.com/bagasbgy/tidymodels-examples", NA, NA,
+  "rockerverse-kickstart: A quick start for RStudio server in a container", "Feb 2019", "https://github.com/bagasbgy/rockerverse-kickstart", NA, NA,
+  "shiny-retail: A shiny dashboard for monitoring a retail business activity", "Jan 2019", "https://github.com/bagasbgy/shiny-retail", NA, NA,
+  "kerasgenerator: Data generator for Keras interface to R", "Jan 2019", "https://github.com/bagasbgy/kerasgenerator", NA, NA,
+  "forecasting-lab: A shiny dashboard for forecast modelling and testing", "Oct 2018", "https://github.com/bagasbgy/forecasting-lab", NA, NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+\newpage
+
+# Projects
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "Course Producer for PT Akur Pratama (Yogya Group)", "Feb 2019", "Algoritma Data Science School", NA, NA,
+  "Course Producer for PT Astra Honda Motor", "Nov 2018", "Algoritma Data Science School", NA, NA,
+  "Course Producer for PT Kereta Api Indonesia", "Oct 2018", "Algoritma Data Science School", NA, NA,
+  "Course Producer for PT Saka Energi Indonesia", "Sep 2018", "Algoritma Data Science School", NA, NA,
+  "Course Producer for Algorithmic Trading using R", "Sep 2018", "Algoritma Data Science School", NA, NA,
+  "Instructor in Capacity Building for Bank Indonesia, Jember Representative Office", "Jun 2017", "Bank Indonesia, Jember Representative Office", NA, NA,
+  "Instructor in Capacity Building for Bank Indonesia, East Java Representative Office", "May 2017", "Bank Indonesia, East Java Representative Office", NA, NA,
+  "Regional Economist for BRI, East Java Representative Office", "Apr 2017", "BRI, East Java Representative Office", NA, NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+\newpage
+
+# Certifications
+
+```{r}
+cv_data <- tribble(
+  ~what, ~when, ~with, ~where, ~why,
+  "DSAx: Debt Sustainability Analysis", "Dec 2017", "International Monetary Fund", NA, NA,
+  "WDR01x: Digital Dividends: Strengthening the Analog Foundation of the Digital Revolution", "Dec 2017", "World Bank Group", NA, NA,
+  "Introduction to R Course", "Nov 2017", "DataCamp", NA, NA
+)
+
+cv_data %>% 
+  detailed_entries(what, when, with, where, why)
+```
+
+# Skills - Programming Languages
+
+* R
+* python
+* Docker
+* Apache Drill
+* Apache Spark
+* Apache Hadoop
+* Apache Hive
+
+# Skills - Data Science Proficiencies
+
+* Time Series and Forecasting
+* Econometrics
+* Deep Learning
+* Machine Learning in General
